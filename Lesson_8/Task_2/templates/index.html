@@ -1,0 +1,15 @@
+<html>
+    <style>
+        h1 { font-size: 35pt;}
+        li {font-size: 30pt;}
+        a {text-decoration: none}
+    </style>
+    <body>
+        <h1>Категории товаров:</h1>
+            <ul>
+                {% for category in categories %}
+                <li><a href="/category/{{category}}">{{category}}</a></li>
+                {% endfor %}
+            </ul>
+    </body>
+    </html>

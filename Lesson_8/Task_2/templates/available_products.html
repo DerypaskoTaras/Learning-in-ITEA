@@ -1,0 +1,15 @@
+<html>
+    <style>
+       h1 { font-size: 35pt;}
+       li {font-size: 30pt;}
+       a {text-decoration: none}
+    </style>
+    <body>
+        <h1>Товары в наличии:</h1>
+            <ul>
+                {% for product in products %}
+                <li><a href="/product/{{product}}">{{product}}</a></li>
+                {% endfor %}
+            </ul>
+    </body>
+</html>
